@@ -1623,6 +1623,145 @@
      object-fit: cover;
 }
 
+.single h2.title {
+  font-size: 48px;
+  margin-bottom: 35px;
+}
+
+.single-car {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  margin-bottom: 35px;
+}
+
+.single-car-left {
+  width: -webkit-calc(50% - 50px);
+  width: calc(50% - 50px);
+  position: relative;
+}
+
+.single-car-left-price {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  background-color: #FF7231;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 30px;
+}
+
+.single-car-left img {
+  width: 100%;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.single-car-right {
+  width: 50%;
+}
+
+.single-car-right-items div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.single-car-right-items div p {
+  color: #848484;
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.single-car-right-items div b {
+  color: black;
+  font-size: 28px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.single-car-right-items div span {
+  width: 100%;
+  display: block;
+  position: relative;
+  height: 20px;
+  margin: 0 10px;
+}
+
+.single-car-right-items div span::after {
+  height: 1px;
+  width: 100%;
+  content: '';
+  position: absolute;
+  bottom: 0;
+  background-color: #848484;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.single-car-right h1 {
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+
+.single-car-right h1 span {
+  color: #FF7231;
+}
+
+.single-video {
+  margin-top: 50px;
+}
+
+.single-gallery {
+  margin-top: 50px;
+}
+
+.single-gallery .popup-gallery {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.single-gallery .popup-gallery a {
+  width: -webkit-calc(33.3% - 20px);
+  width: calc(33.3% - 20px);
+  margin-bottom: 30px;
+}
+
 @media (max-width: 2450px) {
   .see-text::after {
     top: -650px;
@@ -1733,6 +1872,21 @@
   .features {
     padding-top: 250px;
   }
+  .single-car-right h1 {
+    font-size: 32px;
+  }
+  .single-car-left {
+    height: 400px;
+  }
+  .single-car-left img {
+    height: 400px;
+  }
+  .single-car-right-items div p, .single-car-right-items div b {
+    font-size: 18px;
+  }
+  .single h2.title {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1816,6 +1970,26 @@
     font-size: 24px;
   }
   .find-wrap-item {
+    width: 100%;
+  }
+  .single h2.title {
+    font-size: 28px;
+  }
+  .single-video iframe {
+    height: 410px !important;
+  }
+  .single-car {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .single-car-left {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .single-car-right {
     width: 100%;
   }
 }
@@ -2375,6 +2549,26 @@
   }
   .navigation.pagination {
     margin-top: 0;
+  }
+  .single-video iframe {
+    height: 250px !important;
+  }
+  .single-gallery .popup-gallery a {
+    width: -webkit-calc(50% - 5px);
+    width: calc(50% - 5px);
+    margin-bottom: 10px;
+  }
+  .single-wrap h2 {
+    font-size: 26px;
+  }
+  .single-wrap h3 {
+    font-size: 22px;
+  }
+  .single-wrap h4, .single-wrap h5, .single-wrap h6 {
+    font-size: 19px;
+  }
+  .single-wrap p {
+    font-size: 16px;
   }
 }
 

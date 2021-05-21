@@ -885,9 +885,79 @@
           object-fit: cover
 
 
-
-
-
+.single
+  h2.title
+    font-size: 48px
+    margin-bottom: 35px
+  &-car
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    margin-bottom: 35px
+    &-left
+      width: calc(50% - 50px)
+      position: relative
+      &-price
+        position: absolute
+        bottom: 40px
+        left: 40px
+        background-color: $main
+        color: #fff
+        padding: 20px 40px
+        font-size: 30px
+      img
+        width: 100%
+        height: 500px
+        object-fit: cover
+    &-right
+      width: 50%
+      &-items
+        div
+          display: flex
+          justify-content: space-between
+          align-items: center
+          margin-bottom: 30px
+          p
+            color: rgba(132, 132, 132, 1)
+            font-size: 28px
+            white-space: nowrap
+          b
+            color: rgba(0, 0, 0, 1)
+            font-size: 28px
+            white-space: nowrap
+            font-weight: 400
+          span
+            width: 100%
+            display: block
+            position: relative
+            height: 20px
+            margin: 0 10px
+            &::after
+              height: 1px
+              width: 100%
+              content: ''
+              position: absolute
+              bottom: 0
+              background-color: #848484
+              left: 50%
+              transform: translateX(-50%)
+      h1
+        font-size: 44px
+        margin-bottom: 40px
+        span
+          color: $main
+.single-video
+  margin-top: 50px
+.single-gallery
+  margin-top: 50px
+  .popup-gallery
+    display: flex
+    justify-content: space-between
+    align-items: stretch
+    flex-wrap: wrap
+    a
+      width: calc(33.3% - 20px)
+      margin-bottom: 30px
 
 
 

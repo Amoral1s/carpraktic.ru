@@ -250,6 +250,7 @@ section, footer {
   margin-left: 45px;
   display: block;
   color: #222731;
+  font-size: 16px;
   -webkit-transition: .2s;
   -o-transition: .2s;
   transition: .2s;
@@ -347,6 +348,9 @@ section, footer {
   }
   .header-wrap-menu ul {
     padding-top: 5px;
+  }
+  .header-wrap-menu ul li a {
+    margin-left: 20px;
   }
   .offer {
     padding-bottom: 0;
