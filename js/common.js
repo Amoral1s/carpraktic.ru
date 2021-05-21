@@ -131,5 +131,17 @@ jQuery(document).ready(function ($) {
     $('.header-wrap-menu').slideToggle(200);
   });
 
+  $('.see-slider').slick({
+    infinite: true,
+    slidesToShow: 10,
+    slidesToScroll: 1,
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 0,
+    speed: 1500,
+    useCSS: false,
+    pauseOnHover: false
+  });
 
 });

@@ -44,23 +44,31 @@
   padding-top: 180px
   position: relative
   font-family: $title
-  
+  &-slider
+    background-color: $main
+    padding: 0
+    pointer-events: none
+    transform: rotate(-6deg)
+    top: -70px
+    position: relative
+    min-width: 1600px!important
+    width: 110vw!important
+    left: -50px!important
+    p
+      color: #fff
+      width: min-content!important
+      text-align: center
+      padding: 15px 20px
+      font-size: 22px
+      line-height: 1
+      display: flex!important
+      justify-content: center!important
+      align-items: center!important
   &-text
     font-size: 42px
-    padding-top: 150px
+    padding-top: 40px
     z-index: 10
     position: relative
-    &::after
-      position: absolute
-      content: ''
-      top: -500px
-      left: 50%
-      transform: translateX(-50%)
-      width: 100vw
-      height: 800px
-      background-image: url(../img/garant/line.png)
-      background-repeat: no-repeat
-      background-size: cover
     span
       color: $main
   &-wrap
