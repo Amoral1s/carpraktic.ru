@@ -419,7 +419,7 @@ section, footer {
   }
   .header {
     padding: 10px 0;
-    border: 1px solid #FF7231;
+    border: 1px solid #F8F8F8;
     z-index: 45;
   }
   .header-wrap-logo img {
