@@ -1196,6 +1196,11 @@
   cursor: pointer;
   display: none;
   border: 1px solid #fff;
+  background-image: url(../img/icons/up-arrow.svg);
+  background-repeat: no-repeat;
+  -webkit-background-size: 50% 50%;
+          background-size: 50%;
+  background-position: center center;
 }
 
 @media (max-width: 2450px) {
@@ -1314,6 +1319,13 @@
 }
 
 @media (max-width: 992px) {
+  .popup {
+    max-width: -webkit-calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+  .popup-callback, .popup-prices, .popup-service {
+    padding: 40px;
+  }
   .footer {
     margin-top: 0;
     padding-top: 30px;
@@ -1380,6 +1392,62 @@
 }
 
 @media (max-width: 768px) {
+  .popup-service-wrap-item p, .popup-service-wrap-item b {
+    font-size: 12px !important;
+  }
+  .popup-service-wrap-item p {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .popup-service-wrap-item b {
+    margin-left: 20px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    white-space: nowrap;
+  }
+  .popup-service h3 {
+    font-size: 34px;
+  }
+  .popup-callback, .popup-prices {
+    padding: 40px;
+    width: 600px;
+  }
+  .popup-callback form, .popup-prices form {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .popup-callback form label, .popup-prices form label {
+    width: 100%;
+    margin-right: 0;
+  }
+  .popup-callback form label input, .popup-prices form label input {
+    width: 100%;
+    max-width: 100%;
+  }
+  .popup-callback form input.button, .popup-prices form input.button {
+    width: 100%;
+    max-width: 100%;
+  }
+  .popup-callback .close, .popup-prices .close {
+    top: 0px;
+    right: 20px;
+  }
+  .popup-callback h3, .popup-prices h3 {
+    font-size: 34px;
+  }
   .footer-bot {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1796,6 +1864,39 @@
   }
   .garanty, .price .price-text, .price-wrap-item p {
     font-size: 20px;
+  }
+  .popup-callback, .popup-prices {
+    padding: 20px;
+  }
+  .popup-callback h3, .popup-prices h3 {
+    padding-right: 40px;
+  }
+  .popup-callback h3, .popup-prices h3 {
+    font-size: 28px;
+  }
+  .popup-callback p, .popup-prices p {
+    font-size: 18px;
+  }
+  .popup {
+    padding-top: 40px;
+  }
+  .popup h3 {
+    margin-bottom: 25px;
+  }
+  .popup p {
+    margin-bottom: 25px;
+  }
+  .popup .close {
+    font-size: 40px;
+    top: -3px;
+    right: 10px;
+  }
+  .popup-service {
+    padding: 20px;
+    padding-top: 40px;
+  }
+  .popup-service h3 {
+    font-size: 30px;
   }
 }
 
