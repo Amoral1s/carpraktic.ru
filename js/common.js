@@ -130,7 +130,7 @@ jQuery(document).ready(function ($) {
     $(this).toggleClass('burger-active');
     $('.header-wrap-menu').slideToggle(200);
   });
-
+  
   $('.see-slider').slick({
     infinite: true,
     slidesToShow: 10,
